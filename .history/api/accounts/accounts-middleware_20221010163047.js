@@ -1,5 +1,4 @@
 const Account = require('./accounts-model')
-const db = require('../../data/db-config')
 
 exports.checkAccountPayload = (req, res, next) => {
   // DO YOUR MAGIC
@@ -40,6 +39,7 @@ exports.checkAccountNameUnique = async (req, res, next) => {
   } catch(err){
     next(err)
   }
+    
 }
 
 exports.checkAccountId = async (req, res, next) => {
