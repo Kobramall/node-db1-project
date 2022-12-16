@@ -14,7 +14,7 @@ const create =  async location => {
  
   const [ id ] = await db('accounts').insert(location)
   return getById(id)
-}
+};
 
 
 
