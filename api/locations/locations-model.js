@@ -21,7 +21,7 @@ const create =  async location => {
 const deleteById = id => {
 
   return db('accounts').where('id', id).del()
-}
+};
 
 module.exports = {
   getAll,
